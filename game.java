@@ -141,8 +141,8 @@ public class game {
     }
 
     private static int minimax(int[][] board, int depth, boolean isMaximizing) {
-        if (checkWin(COMPUTER)) return 10;
-        if (checkWin(PLAYER)) return -10;
+        if (checkWin(COMPUTER)) return 3;
+        if (checkWin(PLAYER)) return -3;
         if (isBoardFull()) return 0;
 
         if (isMaximizing) {
